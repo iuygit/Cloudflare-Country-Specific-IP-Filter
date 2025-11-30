@@ -16,11 +16,6 @@
 </p>
 
 一个基于 Cloudflare Workers 的优选 CF IP 地址收集与测速工具，自动从多个公开来源收集 Cloudflare IP 地址，并提供可视化界面和测速功能。
-![alt text](image/Light1.png)
-![alt text](image/Light2.png)
-![alt text](image/dark1.png)
-![alt text](image/dark2.png)
-
 ## 🌟 功能特点
 
 - 新增CFnew版IP输出方式，方便一键复制
@@ -29,3 +24,7 @@
 - 新增页面明暗：浅色/深色/跟随系统
 - 更改时间格式为24时制并新增年月日显示
 - 新增环境变量添加密码，且输出结果url不需要密码，方便引用
+![alt text](image/Light1.png)
+![alt text](image/Light2.png)
+![alt text](image/dark1.png)
+![alt text](image/dark2.png)
