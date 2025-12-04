@@ -827,9 +827,9 @@ async function serveAuthPage(env) {
         .login-card { background: var(--card-bg); padding: 40px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); width: 100%; max-width: 400px; text-align: center; border: 1px solid var(--border-color); }
         h1 { color: #3b82f6; margin-bottom: 10px; font-size: 1.8rem; }
         p { color: #64748b; margin-bottom: 30px; font-size: 0.95rem; }
-        input { width: 100%; padding: 12px 16px; border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 20px; font-size: 1rem; outline: none; background: var(--bg-color); color: var(--text-color); transition: border-color 0.2s; }
+        input { box-sizing: border-box; width: 100%; padding: 12px 16px; border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 20px; font-size: 1rem; outline: none; background: var(--bg-color); color: var(--text-color); transition: border-color 0.2s; }
         input:focus { border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); }
-        button { width: 100%; padding: 12px; background: #3b82f6; color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+        button { box-sizing: border-box; width: 100%; padding: 12px; background: #3b82f6; color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.2s; }
         button:hover { background: #2563eb; }
         button:disabled { opacity: 0.7; cursor: not-allowed; }
         .error-msg { background: #fee2e2; color: #991b1b; padding: 10px; border-radius: 8px; margin-top: 20px; font-size: 0.9rem; display: none; border: 1px solid #fecaca; }
