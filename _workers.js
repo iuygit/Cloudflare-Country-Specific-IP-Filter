@@ -1567,7 +1567,7 @@ async function serveHTML(env) {
             } catch (error) { showMessage('请求失败: ' + error.message, 'error'); }
         }
         let speedResults = {}; let isTesting = false; let currentTestIndex = 0;
-        function showMessage(message, type = 'success') { const result = document.getElementById('result'); result.className = \`result \${type}\`; result.innerHTML = \`<p>\${message}</p>\`; result.style.display = 'block'; setTimeout(() => { result.style.display = 'none'; }, 3000); }
+        function showMessage(message, type = 'success') { const result = document.getElementById('result'); result.className = \`result \${type}\`; result.innerHTML = \`<p>\${message}</p>\`; result.style.display = 'block'; setTimeout(() => { result.style.display = 'none'; }, 5000); }
         function openItdogModal() { document.getElementById('itdog-modal').style.display = 'flex'; }
         function closeItdogModal() { document.getElementById('itdog-modal').style.display = 'none'; }
         async function copyIPsForItdog() { try { const response = await fetch('/itdog-data'); const data = await response.json(); if (data.ips && data.ips.length > 0) { const ipText = data.ips.join('\\n'); await navigator.clipboard.writeText(ipText); showMessage('已复制 IP 列表，请粘贴到 ITDog 网站'); closeItdogModal(); } else { showMessage('没有可测速的IP地址', 'error'); } } catch (error) { console.error('获取 ITDog 数据失败:', error); showMessage('获取 IP 列表失败', 'error'); } }
