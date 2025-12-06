@@ -1,4 +1,4 @@
-# 此项目所有功能请移步到CFnew
+# 此项目所有功能请移步到CFnew，Joey大佬全部接手
 
 <div align="center" style="margin-bottom: 20px;">
 
